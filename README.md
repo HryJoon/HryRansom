@@ -6,7 +6,8 @@
 Note : Tool is Made of Educational Purposes only.
        Please try not to harm anyone device  
        
-       it's For Fun Purpose Not For Revenge
+       it's For Fun Purpose Not For Revenge 
+       
        (Join Us https://bit.ly/3MdkT66 )
        
 pkg update && pkg upgrade -y
