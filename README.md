@@ -8,7 +8,7 @@ Note : Tool is Made of Educational Purposes only.
        
        it's For Fun Purpose Not For Revenge 
        
-       (Join Us https://bit.ly/3MdkT66 )
+       (Join Us https://t.me/+uH8SsTPuqds3MWYy )
        
 pkg update && pkg upgrade -y
 
