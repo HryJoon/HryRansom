@@ -59,7 +59,7 @@ def start():
     if ask in ("yes"): pass
     else: exit(r+"[!]"+w+" Dont be evil !")
     print(f"""
-    {r}XRansom{w} is a Simple Android Ransomware Attack
+    {r}HryRansom{w} is a Simple Android Ransomware Attack
     {w}The user can customize the App Icon, Name, Key and others.
     {d}support us https://t.me/+uH8SsTPuqds3MWYy !{w}
     """)
